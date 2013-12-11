@@ -12,6 +12,8 @@ This is a CodeIQ challenge.  You have to reverse engineer the crackme1 binary an
 
 I reversed engineered the binary, figured out all of the checks it was making, and then wrote a logic program in Haskell to take all the conditions and figure out what group of numbers satisfies all the conditions.
 
+We might also be able to use something like this:
+https://github.com/gcross/LogicGrowsOnTrees/
 
 
 
