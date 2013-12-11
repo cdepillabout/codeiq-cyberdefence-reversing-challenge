@@ -43,7 +43,7 @@ choices = msum . map return
 
 myLogic :: Logic [Int]
 myLogic = do
-        [n1, n2, n3, n4, n5, n6] <- choices $ sequence $ replicate 6 [0..30]
+        [n1, n2, n3, n4, n5, n6] <- choices $ sequence $ replicate 6 [0..10]
 
         guard $ n1 == n3
         guard $ n2 - 2 == n1
