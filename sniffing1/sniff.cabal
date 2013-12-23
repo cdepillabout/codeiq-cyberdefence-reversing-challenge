@@ -19,6 +19,7 @@ Library
   Exposed-Modules:      Sniff
   Other-Modules:        Sniff.Internal
   Build-Depends:        base
+                      , parsec
 
 Executable sniff
   Main-Is:             Main.hs
@@ -26,6 +27,7 @@ Executable sniff
   -- Other-Extensions:    
   Build-Depends:       base
                      , sniff
+                     , parsec
   Hs-Source-Dirs:      src
   Default-Language:    Haskell2010
   Ghc-Options:         -Wall -threaded -O2 -rtsopts -fprof-auto
