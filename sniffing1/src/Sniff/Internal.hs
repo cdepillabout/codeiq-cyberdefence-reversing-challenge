@@ -1,0 +1,3 @@
+module Sniff.Internal
+    (
+    ) where
