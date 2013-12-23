@@ -1,27 +1,6 @@
 # sniff
 
-TODO: Write description here
+We write something to parse and then decode:
 
-## Installation
+Authorization: Basic YWRtaW46SW1BZG1pbg==
 
-TODO: Write installation instructions here
-
-## Usage
-
-TODO: Write usage instructions here
-
-## How to run tests
-
-```
-cabal configure --enable-tests && cabal build && cabal test
-```
-
-or
-
-```
-make tests
-```
-
-## Contributing
-
-TODO: Write contribution instructions here
