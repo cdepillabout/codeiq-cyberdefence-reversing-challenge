@@ -2,7 +2,7 @@
 -- code taken from http://themonadreader.files.wordpress.com/2010/01/issue15.pdf
 
 import Control.Monad (MonadPlus, msum, guard, forM_)
-import Control.Monad.Logic (Logic, observeAll, observeMany, (>>-))
+import Control.Monad.Logic (Logic, observeAll)
 
 choices :: MonadPlus m => [a] -> m a
 choices = msum . map return
@@ -43,7 +43,7 @@ choices = msum . map return
 
 myLogic :: Logic [Int]
 myLogic = do
-        [n1, n2, n3, n4, n5, n6] <- choices $ sequence $ replicate 6 [0..10]
+        [n1, n2, n3, n4, n5, n6] <- choices $ sequence $ replicate 6 [0..20]
 
         guard $ n1 == n3
         guard $ n2 - 2 == n1
